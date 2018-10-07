@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "stock_quote"
 
 group :development, :test do
   gem 'sqlite3'
