@@ -61,5 +61,10 @@ class User < ApplicationRecord
     friendships.where(friend_id: friend_id).count < 1
   end
 
+  def show
+    @user = User.find(params[:id])
+    @user_stocks = @user.stocks
+  end
+
 
 end
